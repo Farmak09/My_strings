@@ -51,11 +51,11 @@ int isupper(char letter)
 	}
 }
 
-int toupper(char letter)
+char toupper(char letter)
 {
 	if (letter >= 97 && letter <= 122)
 	{
-		letter - 32;
+		letter -= 32;
 		return letter;
 	}
 	else
@@ -67,14 +67,14 @@ int toupper(char letter)
 
 char* capitalize(char* str)
 {
+	if (!isupper(str[0]))
+	{
+		str[0] = toupper(str[0]);
+	}
 	int index = 0;
 	while (str[index] != '\0')
-	{
-		if (!isupper(str[0]))
-		{
-			str[0] = toupper(str[0]);
-		}
-		else if (str[index - 1] == 32 && !isupper(str[index]))
+	{	
+		if (str[index - 1] == 32 && !isupper(str[index]))
 		{
 			str[index] = toupper(str[index]);
 		}
@@ -86,18 +86,18 @@ char* capitalize(char* str)
 
 char* my_strflip(char* str)
 {
-	char* str_flipper = str;
-	int flipped_index = 0;
-	int index = 0;
-	while (str_flipper[index] != '\0')
+	int lenght = my_strlen(str);
+	for (int i = 0; i < lenght / 2; i++)
 	{
-		index++;
-	}
-	while (str_flipper[index] <= 0)
-	{
-		str[flipped_index] = str_flipper[index];
-		flipped_index++;
-		index--;
+		char_flipper(&str[i], &str[lenght - i]);
 	}
 	return str;
 }
+
+void char_flipper(char *first_char, char *second_char)
+{
+	char temp_char = *first_char;
+	*first_char == *second_char;
+	*second_char == temp_char;
+}
+

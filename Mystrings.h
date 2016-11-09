@@ -4,7 +4,7 @@ int my_strlen(char*);
 int word_count(char*);
 int upper_count(char*);
 int isupper(char);
-int toupper(char);
+char toupper(char);
 char* capitalize(char*);
-int my_strflip(char*);
+char* my_strflip(char*);
 #endif

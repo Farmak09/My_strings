@@ -3,8 +3,8 @@
 
 int main()
 {
-	char* test = "test";
-	printf("%i", word_count(test));
+	char test[] = "te st";
+	printf("%s", my_strflip(test));
 	getchar();
 	return 0;
 }
