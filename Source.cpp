@@ -3,7 +3,7 @@
 
 int main()
 {
-	char test[] = "te st";
+	char test[] = "tefst";
 	printf("%s", my_strflip(test));
 	getchar();
 	return 0;

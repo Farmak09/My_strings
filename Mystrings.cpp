@@ -84,20 +84,22 @@ char* capitalize(char* str)
 	return str;
 }
 
+void char_flipper(char *first_char, char *second_char)
+{
+	char temp_char = *first_char;
+	*first_char = *second_char;
+	*second_char = temp_char;
+}
+
 char* my_strflip(char* str)
 {
 	int lenght = my_strlen(str);
 	for (int i = 0; i < lenght / 2; i++)
 	{
-		char_flipper(&str[i], &str[lenght - i]);
+		char_flipper(&str[i], &str[lenght - 1 - i]);
 	}
 	return str;
 }
 
-void char_flipper(char *first_char, char *second_char)
-{
-	char temp_char = *first_char;
-	*first_char == *second_char;
-	*second_char == temp_char;
-}
+
 
