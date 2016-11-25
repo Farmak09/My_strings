@@ -1,3 +1,6 @@
-﻿  Mystrings.cpp
-  Mystrings.vcxproj -> C:\Users\jaumesv1\Desktop\Debug\Mystrings.exe
-  Mystrings.vcxproj -> C:\Users\jaumesv1\Desktop\Debug\Mystrings.pdb (Partial PDB)
+﻿  Source.cpp
+  Mystrings.cpp
+  Generating Code...
+  LINK : C:\Users\jaumesv1\Documents\GitHub\My_strings\Debug\Mystrings.exe not found or not built by the last incremental link; performing full link
+  Mystrings.vcxproj -> C:\Users\jaumesv1\Documents\GitHub\My_strings\Debug\Mystrings.exe
+  Mystrings.vcxproj -> C:\Users\jaumesv1\Documents\GitHub\My_strings\Debug\Mystrings.pdb (Partial PDB)

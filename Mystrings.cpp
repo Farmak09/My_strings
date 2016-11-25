@@ -1,4 +1,6 @@
-#include<stdio.h>
+#include <stdio.h>
+#include "Mystrings.h"
+
 int my_strlen(char* str)
 {
 	int counter = 0;
